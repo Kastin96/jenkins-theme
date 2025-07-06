@@ -1,0 +1,120 @@
+/* ========== GENERAL CLEANUP ========== */
+
+/* Use a modern sans-serif font everywhere */
+body, td, th, input, select, textarea {
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif !important;
+}
+
+/* Make backgrounds cleaner */
+body {
+    background-color: #f5f7fa !important;
+}
+
+/* Soften headers */
+h1, h2, h3, h4, h5 {
+    color: #333 !important;
+}
+
+/* ========== STAGE VIEW IMPROVEMENTS ========== */
+
+/* Center stage headers */
+div.stage-header-cell {
+    text-align: center !important;
+    font-weight: 600 !important;
+}
+
+/* Make stage columns more distinct */
+div.stage-cell {
+    border: 1px solid #ddd !important;
+    background-color: #ffffff !important;
+}
+
+/* Add subtle hover effect */
+div.stage-cell:hover {
+    background-color: #eef3fa !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Round the corners of cells */
+div.stage-cell, div.stage-header-cell {
+    border-radius: 4px !important;
+}
+
+/* Highlight failed cells with a red border */
+div.stage-failed {
+    border: 2px solid #e74c3c !important;
+}
+
+/* Make successful cells pop a bit more */
+div.stage-success {
+    background-color: #e6f7ec !important;
+    border: 1px solid #27ae60 !important;
+}
+
+/* Center text in stage cells */
+div.stage-cell > div {
+    text-align: center !important;
+}
+
+/* ========== BUTTONS & LINKS ========== */
+
+a.button, .yui-button, .yui-button button {
+    background-color: #4a90e2 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+}
+
+a.button:hover, .yui-button:hover, .yui-button button:hover {
+    background-color: #357ab7 !important;
+    color: #fff !important;
+}
+
+/* ========== TABLES ========== */
+
+table {
+    border-collapse: collapse !important;
+}
+
+th, td {
+    padding: 8px !important;
+}
+
+/* Make table headers stand out */
+th {
+    background-color: #f0f0f0 !important;
+    font-weight: 600 !important;
+}
+
+/* ========== BUILD HISTORY ========== */
+
+#buildHistory .build-row-cell {
+    padding: 6px 10px !important;
+}
+
+/* ========== SIDEBAR ========== */
+
+#tasks .task {
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+    margin-bottom: 4px !important;
+    border-radius: 4px !important;
+}
+
+#tasks .task a {
+    color: #333 !important;
+    font-weight: 500 !important;
+}
+
+/* ========== MISCELLANEOUS ========== */
+
+/* Remove box shadows */
+* {
+    box-shadow: none !important;
+}
+
+/* Smooth transitions everywhere */
+* {
+    transition: all 0.2s ease-in-out !important;
+}
